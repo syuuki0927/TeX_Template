@@ -1,0 +1,65 @@
+\usepackage{amsmath}
+\usepackage[dvipdfmx]{graphicx}
+%\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage{ascmac}
+\usepackage{fancybox}
+%\usepackage[subrefformat=parens]{subcaption}
+\usepackage[top=30truemm,bottom=30truemm,left=30truemm,right=30truemm]{geometry}
+\usepackage{listings,jlisting} %日本語のコメントアウトをする場合jlistingが必要
+\usepackage[dvipdfmx]{color}
+\usepackage{bm}
+\usepackage{amssymb}
+%ここからソースコードの表示に関する設定
+\begin{comment}
+  \lstset{
+  %language={Verilog},
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+  %begin{lstlisting}[caption= ,label=]
+}
+%ここまでソースコードの表示に関する設定
+\end{comment}
+
+\lstset{%
+  %language={Verilog},
+  basicstyle={\small},%
+  identifierstyle={\small},%
+  commentstyle={\small\itshape\color[rgb]{0,0.5,0}},%
+  keywordstyle={\small\bfseries\color[rgb]{0,0,1}},%
+  ndkeywordstyle={\small},%
+  stringstyle={\small\ttfamily\color[rgb]{1,0,1}},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},%
+  numbers=left,%
+  xrightmargin=0zw,%
+  xleftmargin=3zw,%
+  numberstyle={\scriptsize},%
+  stepnumber=1,
+  numbersep=1zw,%
+  lineskip=-0.5ex%
+}
+\renewcommand{\lstlistingname}{テキスト}
+
+
+
+
+\renewcommand{\labelenumi}{(\theenumi)}
